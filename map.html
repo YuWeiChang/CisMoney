@@ -100,10 +100,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	除了境內碳權外，日本政府計畫從京都議定書所設計的排放機制取得碳權，以達到減碳目標。截至2012年，日本減碳量達到 1.89 百萬噸。2006-2010 會計年度中，大約有 26 萬噸的排放權被交易，平均每噸交易價格為9-16 美元。<br>
     </div>
     <script>
+	var isShow = false;
 	function display() {
-		document.getElementById('ja').style.display='';		
-        }
-    </script>
+	if(!isShow) {
+		isShow = true;
+		document.getElementById('ja').style.display='';
+	}
+	else {
+		isShow = false;
+		document.getElementById('ja').style.display='none';
+	}			
+	}
+	</script>
 </body>
 
 </html>
